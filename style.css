@@ -3,3 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    height: 100vh;
+}
+
+.logo-mario-Bros {
+    height: 200px;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    background-color: #c51111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+.caixa-principal {
+    width: 40%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+button:active {
+    opacity: 0.5;
+}
+
+.logo-mario-luigi {
+    height: 500px;
+}
+
