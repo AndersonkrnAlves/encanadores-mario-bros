@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,28 +9,62 @@
 </head>
 
 <body>
-    <section class="caixa-principal">
 
-        <img class="logo-mario-Bros" src="./assets/logo.png" alt="logo do Mario Bros">
+    <div class="mascara-formulario"></div>
 
-        <p> Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! </p>
+    <header>
 
-        <p>
-            Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
-            entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
-            Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
-        </p>
+        <img class="logo-header" src="./assets/logo-header.png" alt="Logo do Mario Bros" />
+        <a href="#home">Home</a>
+        <a href="#contact">Fale Conosco</a>
+        <a href="#services">Nossos Serviços</a>
 
-        <button> Entre em contato </button>
-
-    </section>
-
-    <aside>
-
-        <img class="logo-mario-luigi" src="./assets/mario.png" alt="logo mario e Luigi">
+    </header>
     
-    </aside>
+    <main class="caixa-mae">
+        <section class="caixa-principal">
+            
+            <img class="logo-mario-Bros" src="./assets/logo.png" alt="logo do Mario Bros">
+            
+            <p> Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! </p>
+            
+            <p>
+                Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
+            </p>
+            
+            <button> Entre em contato </button>
+            
+        </section>
+        
+        <div class="box-video">
+    
+            <video src="./assets/video.mp4" autoplay muted loop></video>
+            <div class="mascara"></div>
+        </div>
 
+        <section>
+
+            <img class="logo-mario-luigi" src="./assets/mario.png" alt="logo mario e Luigi">
+
+        </section>
+
+    </main>
+
+    <a href="https://wa.me/5561985321345?text=ola!%20gostaria%20de%20falar%20com%20os%20irm%C3%A3os%20mario.">
+        <img src="./assets/whatsapp.png" alt="logo do whatsapp" class="logo-whatsapp">
+    </a>
+
+    <form class="formulario-fale-conosco" action="">
+
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="tel" placeholder="Telefone" required>
+        <textarea name="" id="" placeholder="Digite seu Problema aqui..." required></textarea>
+
+        <button type="submit"> Enviar </button>
+    </form>
 </body>
 
 </html>

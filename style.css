@@ -2,9 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
 }
 
 body {
+    height: 100vh;
+}
+
+.caixa-mae {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -16,7 +21,7 @@ body {
     height: 200px;
 }
 
-button{
+button {
     width: 200px;
     height: 50px;
     background-color: #c51111;
@@ -26,20 +31,149 @@ button{
     text-transform: uppercase;
     color: white;
     font-weight: bold;
+    margin-top: 30px;
+}
+
+button:hover {
+    transition: 0.5s ease-in-out;
+    background-color: #ff0000;
+    color: black;
+
+
+}
+
+button:active {
+    transition: 0.5 ease-in-out;
+    background-color: #07ea07;
+    color: #f9fafa;
 }
 
 .caixa-principal {
     width: 40%;
 }
 
-button:hover {
-    opacity: 0.8;
-}
-button:active {
-    opacity: 0.5;
-}
-
 .logo-mario-luigi {
     height: 500px;
 }
 
+.box-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+   
+}
+
+video {
+   
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    position: flex;
+    top: 0;
+    
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%); */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+header {
+
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+a:hover {
+    color: #c51111;
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+}
+
+.logo-header {
+    height: 60px;
+
+}
+
+.logo-whatsapp {
+    width: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.formulario-fale-conosco {
+    background-color: #f9fafa;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    top: 25%;
+    left: -300px;
+    border-radius: 10px;
+    padding: 20px;
+
+
+}
+
+.formulario-fale-conosco input {
+    height: 40px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline-color: #18d80f;
+
+}
+
+.formulario-fale-conosco textarea {
+    width: 270px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline-color: #18d80f;
+
+}
+
+.mascara-formulario {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%); */
+}
+
+
+/*
+posiçaõ final
+top: 30%;
+left: 50%;
+transform: translateX(-50%);
+
+*/
