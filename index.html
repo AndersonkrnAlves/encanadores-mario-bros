@@ -10,7 +10,7 @@
 
 <body>
 
-    <div class="mascara-formulario"></div>
+    <div onclick="cliqueiNaMascara()" class="mascara-formulario"></div>
 
     <header>
 
@@ -20,53 +20,57 @@
         <a href="#services">Nossos Serviços</a>
 
     </header>
-    
+
     <main class="caixa-mae">
         <section class="caixa-principal">
-            
+
             <img class="logo-mario-Bros" src="./assets/logo.png" alt="logo do Mario Bros">
-            
+
             <p> Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! </p>
-            
+
             <p>
                 Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
                 entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
                 Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
             </p>
-            
-            <button> Entre em contato </button>
-            
+
+            <button onclick="cliqueiNoBotao()"> Entre em contato </button>
+
         </section>
-        
-        
+
+
         <section>
-            
+
             <img class="logo-mario-luigi" src="./assets/mario.png" alt="logo mario e Luigi">
-            
+
         </section>
-        
+
     </main>
-    
+
     <a href="https://wa.me/5561985321345?text=ola!%20gostaria%20de%20falar%20com%20os%20irm%C3%A3os%20mario.">
         <img src="./assets/whatsapp.png" alt="logo do whatsapp" class="logo-whatsapp">
     </a>
-    
-    <form class="formulario-fale-conosco" action="">
-        
-        <input type="text" placeholder="Nome" required>
-        <input type="email" placeholder="E-mail" required>
-        <input type="tel" placeholder="Telefone" required>
-        <textarea name="" id="" placeholder="Digite seu Problema aqui..." required></textarea>
-        
-        <button type="submit"> Enviar </button>
+
+    <form 
+        class="formulario-fale-conosco" 
+        action="https://formcarry.com/s/jukCJpvqNFd" 
+        method="POST"
+        enctype="multipart/form-data">
+
+            <input type="text" placeholder="Nome" name="nome" required>
+            <input type="email" placeholder="E-mail" name="email"  required>
+            <input type="tel" placeholder="Telefone" name="telefone" required>
+            <textarea name="duvida" id="" placeholder="Digite seu Problema aqui..." required></textarea>
+            <button type="submit"> Pedir orçamento </button>
     </form>
 
     <div class="box-video">
-    
+
         <video src="./assets/video.mp4" autoplay muted loop></video>
         <div class="mascara"></div>
     </div>
-    
+
 </body>
+<script src="./scripts.js"></script>
 
 </html>
