@@ -63,7 +63,7 @@ button:active {
     top: 0;
     left: 0;
     z-index: -1;
-   
+
 }
 
 video {
@@ -136,7 +136,7 @@ a:hover {
     left: -300px;
     border-radius: 10px;
     padding: 20px;
-    transition:left 1s ease-in-out;
+    transition: left 1s ease-in-out;
 
 }
 
