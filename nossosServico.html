@@ -6,26 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Mario Bros </title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
     <div onclick="cliqueiNaMascara()" class="mascara-formulario"></div>
 
-    <header>
+    <header class="header-servicos">
 
         <img class="logo-header" src="./assets/logoheader.png" alt="Logo do Mario Bros" />
-        <a href="#home">Home</a>
+        <a href="index.html">Home</a>
         <a onclick="cliqueiNoBotao()">Fale Conosco</a>
-        <a href="nossosServico.html">Nossos Serviços</a>
 
     </header>
-    
-    <main class="caixa-mae">
-        <section class="caixa-principal">
+
+    <div class="background">
+
+        <img src="./assets/backgroud.jpeg" alt="Mundo do Mario Bros e personagens" />
+
+    </div>
+
+    <main class="caixa-mae-servicos">
+        <section class="caixa-principal-servicos">
 
             <img class="logo-mario-Bros" src="./assets/logo.png" alt="logo do Mario Bros">
+
+            <h1>Nossos Serviços</h1>
 
             <p> Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! </p>
 
@@ -35,22 +41,29 @@
                 Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
             </p>
 
+            <h2>Serviços Oferecidos:</h2>
+            <ul>
+                <li>Reparo de Vazamentos: Seja um pequeno gotejamento ou um grande vazamento, Mario e Luigi têm as
+                    ferramentas e habilidades para consertar qualquer problema de vazamento.</li>
+                <li>Desentupimento de Canos: Canos entupidos podem causar grandes transtornos. Deixe que nossos heróis
+                    resolvam o problema rapidamente!</li>
+                <li>Instalação de Torneiras e Válvulas: Quer atualizar suas torneiras ou instalar novas válvulas? Mario
+                    e Luigi são especialistas em instalação.</li>
+                <li>Manutenção Preventiva: Evite problemas futuros com inspeções regulares e manutenção preventiva feita
+                    pelos melhores encanadores do mercado.</li>
+            </ul>
+
             <button onclick="cliqueiNoBotao()"> Entre em contato </button>
 
         </section>
 
-
         <section>
 
-            <img class="logo-mario-luigi" src="./assets/mario.png" alt="logo mario e Luigi">
+            <img src="./assets/luigi.png" alt=" imagem do Luigi" class="imagem-luigi">
 
         </section>
 
     </main>
-
-    <a href="https://wa.me/5561985321345?text=ola!%20gostaria%20de%20falar%20com%20os%20irm%C3%A3os%20mario.">
-        <img src="./assets/whatsapp.png" alt="logo do whatsapp" class="logo-whatsapp">
-    </a>
 
     <form class="formulario-fale-conosco" action="https://formcarry.com/s/jukCJpvqNFd" method="POST"
         enctype="multipart/form-data">
@@ -61,12 +74,6 @@
         <textarea name="duvida" id="" placeholder="Digite seu Problema aqui..." required></textarea>
         <button type="submit"> Pedir orçamento </button>
     </form>
-
-    <div class="box-video">
-
-        <video src="./assets/video.mp4" autoplay muted loop></video>
-        <div class="mascara"></div>
-    </div>
 
 </body>
 <script src="script.js"></script>

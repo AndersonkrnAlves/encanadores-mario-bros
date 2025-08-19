@@ -10,7 +10,7 @@ function cliqueiNoBotao(){
 }
 
 function cliqueiNaMascara(){
-    formulario.style.left = "-300px"
+    formulario.style.left = "-400px"
     formulario.style.transform = "translateX(0)"
     mascaraFormulario.style.visibility = "hidden"
 }
